@@ -82,6 +82,9 @@ last$type <- c(rep("last", length(rownames(last))))
 # combine
 data <- as.data.frame(rbind(first, last))
 
+# convert
+data$season <- as.factor(data$season)
+
 ## visualisation
 
 # define some colours
